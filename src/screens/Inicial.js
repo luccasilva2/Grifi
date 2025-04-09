@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { View, Text, StyleSheet, TextInput, TouchableOpacity } from "react-native";
 import BottomTabNavigator from "../../components/BottomTabNavigator";
 import { database } from "../config/firebaseConfig" // Import atualizado
-import { collection, setDoc, doc } from "firebase/firestore";
+import { collection, setDoc, doc } from "@firebase/firestore";
 
 export default function Inicial() {
   const [name, setName] = useState("");

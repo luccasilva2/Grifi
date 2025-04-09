@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { View, TextInput, Button, Alert, StyleSheet } from 'react-native';
-import { getFirestore, collection, query, where, getDocs } from 'firebase/firestore'; // Funções do Firestore
+import { getFirestore, collection, query, where, getDocs } from '@firebase/firestore'; // Funções do Firestore
 import { getAuth } from 'firebase/auth'; // Função do Firebase Auth
 import { useNavigation } from '@react-navigation/native'; // Importando o hook de navegação
 
