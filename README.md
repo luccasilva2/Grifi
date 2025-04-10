@@ -51,27 +51,6 @@ npm install
 yarn install
 ```
 
-### 📁 Configure o Firebase
-
-Crie um arquivo `firebaseConfig.js` em `./src/config/` com suas credenciais:
-
-```javascript
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-
-const firebaseConfig = {
-  apiKey: "SUA_API_KEY",
-  authDomain: "SEU_PROJETO.firebaseapp.com",
-  projectId: "SEU_PROJETO",
-  storageBucket: "SEU_PROJETO.appspot.com",
-  messagingSenderId: "SEU_SENDER_ID",
-  appId: "SEU_APP_ID"
-};
-
-const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
-```
-
 ### 🚀 Inicie o app:
 ```bash
 npm start
@@ -89,25 +68,6 @@ expo start
 
 ---
 
-## 📌 Como Contribuir
-
-1. Faça um fork do projeto
-2. Crie uma branch:
-```bash
-git checkout -b minha-feature
-```
-3. Commit suas alterações:
-```bash
-git commit -m "Adicionei um novo recurso"
-```
-4. Envie para o repositório remoto:
-```bash
-git push origin minha-feature
-```
-5. Abra um Pull Request!
-
----
-
 ## 📜 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
@@ -121,15 +81,4 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 </div>
 
 ---
-
-## 🎨 Personalize!
-
-- Substitua as imagens de placeholder por screenshots reais do app
-- Adicione um GIF demonstrando o app funcionando
-- Inclua o link para o APK (se aplicável):
-```markdown
-[📲 Baixar APK](https://drive.google.com/uc?export=download&id=SEU_ID_DO_ARQUIVO)
-```
-
-👉 Dica: Use [Shields.io](https://shields.io) para criar badges personalizadas!
 
